@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP"
+        android:id="@+id/tvIp"
+        android:layout_alignBottom="@+id/editxtIp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editxtIp"
+
+        android:singleLine="true"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvIp"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mouse Acessivel"
+        android:id="@+id/tvTituloLogin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Porta"
+        android:id="@+id/tvPorta"
+        android:layout_below="@+id/tvIp"
+        android:layout_alignLeft="@+id/tvIp"
+        android:layout_alignStart="@+id/tvIp"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editxtPorta"
+        android:singleLine="true"
+        android:inputType="number"
+        android:layout_alignBottom="@+id/tvPorta"
+        android:layout_toRightOf="@+id/tvPorta"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Conectar"
+        android:id="@+id/btnConectar"
+        android:layout_below="@+id/editxtPorta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp" />
+</RelativeLayout>

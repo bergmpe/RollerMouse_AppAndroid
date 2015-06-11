@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.blogspot.bergmpe.rollermouse_appandroid" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity android:name=".MyActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:name=".LoginInternet"/>
+        <activity
+            android:name=".MainMenuActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="br.edu.ifce.m2ta.MainActivity"/>
+        <activity
+            android:name="br.edu.ifce.m2ta.BluetoothActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="br.edu.ifce.m2ta.MouseWithButtonsActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name="br.edu.ifce.m2ta.ErrorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+        <activity
+            android:name="br.edu.ifce.m2ta.MouseWithoutButtonsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
+

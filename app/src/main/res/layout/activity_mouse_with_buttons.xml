@@ -1,0 +1,147 @@
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mouseSwitcher"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.fakemouse.gui.MouseActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="14">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="7"
+            android:weightSum="7">
+
+            <Button
+                android:id="@+id/halfClick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/halfClickDisabled"
+                android:textSize="@dimen/font_size_tablet"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:id="@+id/doubleClick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/doubleClick"
+                android:textSize="@dimen/font_size_tablet"
+                android:layout_margin="10dp"  />
+
+            <Button
+                android:id="@+id/rightClick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/rightClick"
+                android:textSize="@dimen/font_size_tablet"
+                android:layout_margin="10dp" />
+
+            <ImageButton
+                android:id="@+id/scrollUp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/up"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/scrollUp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="7"
+            android:weightSum="7">
+
+            <Button
+                android:id="@+id/click"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/click"
+                android:textSize="@dimen/font_size_tablet"
+                android:layout_margin="10dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="4"
+                android:weightSum="4"
+                android:layout_margin="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:layout_weight="1.4"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="2.6"
+                    android:weightSum="2.6">
+                    <ImageButton
+                        android:id="@+id/scrollLeft"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:contentDescription="@string/scrollLeft"
+                        android:src="@drawable/left"
+                        android:scaleType="fitCenter"/>
+
+                    <ImageButton
+                        android:id="@+id/scrollRight"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:contentDescription="@string/scrollRight"
+                        android:src="@drawable/right"
+                        android:scaleType="fitCenter"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/scrollDown"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/scrollDown"
+                android:textSize="@dimen/font_size_tablet"
+                android:src="@drawable/down"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/touchMouse"
+        android:text="@string/instructions"
+        android:textSize="@dimen/font_size_tablet"
+        android:textColor="@android:color/black"
+        android:gravity="fill_vertical"/>
+
+</ViewSwitcher>

@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">ClienteApp</string>
+
+    <string name="tvTitulo">Mouse Acessivel</string>
+    <string name="action_settings">Settings</string>
+    <string name="btnInternet">Conectar via Wifi</string>
+    <string name="btnBlueTooth">Conectar via Bluetooth</string>
+
+    <string name="action_exit">Sair</string>
+    <string name="action_change_ui">Mudar Interface</string>
+
+    <string name="halfClickEnabled">Meio Clique ATIVO</string>
+    <string name="halfClickDisabled"> Meio Clique</string>
+    <string name="doubleClick">Duplo Clique</string>
+    <string name="click">Clique</string>
+    <string name="rightClick">Clique botão direito</string>
+    <string name="scrollUp">Rolar para cima</string>
+    <string name="scrollDown">Rolar para baixo</string>
+    <string name="scrollLeft">Rolar para esquerda</string>
+    <string name="scrollRight">Rolar para direita</string>
+
+    <string name="enablingBluetooth">Habilitando bluetooth . . .</string>
+    <string name="searchingDevices">Buscando dispositivos . . .</string>
+    <string name="startingApp">Iniciando aplicação . . .
+        						\n\n Toque se a busca de dispositivos não foi iniciada automaticamente.</string>
+    <string name="general_error">Um erro ocorreu. \n\n Toque para fechar aplicação</string>
+    <string name="bluetoothNotAvailable"> Bluetooth não está disponível nesse dispositivo.</string>
+    <string name="tapToExit">Toque para fechar aplicação.</string>
+    <string name="bluetoothDisabled">Bluetooth não está habilitado.</string>
+    <string name="scanDevices">Toque para buscar dispositivos</string>
+    <string name="bluetoothNotEnabled">Bluetooth não habilitado. Operação cancelada pelo usuário.</string>
+    <string name="noDevices">Não há dispositivo para conectar.</string>
+
+    <string name="instructions">
+          Clique = um toque
+       \n
+       \nDuplo clique = dois toques
+       \n
+       \nMeio clique = três toques
+       \n
+       \nClique botão direito = toque longo
+       \n
+       \nMouse = movimentos de arrasto para cima/baixo/esquerda/direita
+    </string>
+
+</resources>
